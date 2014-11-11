@@ -8,5 +8,8 @@ namespace ChessProject2
 {
     class DrawingBoard
     {
+        string[,] chessboard = new string[8,8];
+        
     }
+    
 }

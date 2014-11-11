@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessProject2
 {
-    class ChessPieces
+    internal class ChessPieces
     {
         public string Color { get; set; }
 
@@ -17,11 +17,14 @@ namespace ChessProject2
 
     }
 
-    class Pawn : ChessPieces
+    internal class Pawn : ChessPieces
     {
-        class Pawn (string Colour)  
+        public Pawn(string colour, int x, int y)
         {
-             
+            Color = colour;
+            PositionX = x;
+            PositionY = y;
         }
     }
+
 }
